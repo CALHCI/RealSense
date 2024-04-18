@@ -1,14 +1,15 @@
-# RealSense Camera Detection
 ## AprilTag Detection Algorithm Documentation
 ### Overview
 Provides the functionality to take a picture of a Tower of Hanoi instance where each ring is surrounded by AprilTags and represent their order and rod location in the form of an array "state/frame."
 
 ### How to Use
-1. Print a chessboard/checkerboard pattern like [this one](https://raw.githubusercontent.com/MarkHedleyJones/markhedleyjones.github.io/master/media/calibration-checkerboard-collection/Checkerboard-A4-25mm-8x6.pdf) and attach it to a hard, movable surface.
-2. Print multiple "tag36h11" AprilTags with IDs from 1 to n and surround the outside of each ring with its corresponding ID AprilTag (with an ID of 1 being the smallest and n being the biggest).
-3. Run `apriltag_get_images.py` to take pictures of the chessboard at different locations, rotations, and angles by pressing `s` and hitting `q` to exit. The more images you take, the more accurate the calibration will be, but anywhere from 40-60 should be fine.
-4. Run `apriltag_calibration.py` to take in all of the taken images and generate a calibration file. This should only be done once for each camera (as with the previous steps).
-5. Run `apriltag_detect.py` to use the AprilTag locations and return a Tower of Hanoi frame.
+1. Print multiple "tag36h11" AprilTags with IDs from 1 to n and surround the outside of each ring with its corresponding ID AprilTag (with an ID of 1 being the smallest and n being the biggest).
+2. Print 2 AprilTags with IDs of 0 and place them in between each pole.
+3. Plug in the Intel RealSense camera and place it so the AprilTags are in view.
+4. Run `python apriltag_detect.py <n> --debug --delay 1000` to test it in debug mode with a delay of 1000 ms and `n` rings.
+5. Run `python apriltag_detect.py <n>` to continually print a Tower of Hanoi frame for `n` rings.
+
+(TODO) ADD A VISUAL OF THE TOWER
 
 ### Design Choices
 #### *How do we detect the rings?*
@@ -35,19 +36,14 @@ Provides the functionality to take a picture of a Tower of Hanoi instance where 
     * Somewhat quick to process
     * Not a strict environment at all
 
-I chose to use AprilTags as, at the cost of minimal computing power and processing time, they can provide the most accurate estimation for where each ring is while maximizing the amount of external variables that can be ignored.
+I chose to use AprilTags as, at the cost of minimal computing power and processing time, they can provide the most accurate estimation for where each ring is while maximizing the amount of external variables that can be ignored. Additionally, I chose to use the "36h11" family opposed to the "16h5" family since, as indicated through testing, the small hamming distance of "16h5" led to the program detecting the background as AprilTags. Although this is filtered out in the final product, considering that the camera's resolution is good enough, we might as well use the "36h11" family to minimize error.
 
 ### How Does It Work?
-1. Calibrate the camera by getting its focal width, focal height, camera center x, and camera center y, which is done by determining its warping with a known image (like a commonly used chessboard pattern).
-2. Identify the location of each AprilTag and average together the position of each tag.
-3. Use the average of each tag to determine which rod they're most likely attached to and stack them in the order of y coordinates.
-
-(TODO) ADD A VISUAL OF THE TOWER
-
-### Performance
-(TODO)
+1. Use the fx, fy, cx, cy and distance coefficients of the Intel RealSense camera to unwarp the picture taken.
+2. Track the AprilTags and find their location in 3d space.
+3. Average the coordinates of all of the tags with the same ID into one from 1-n.
+4. Separate them into three arrays representing the 3 rods and place the id based on it's x value in relation to the x values of the two dividers.
+5. Sort those arrays based on the y value of their average position
 
 ### How to Improve
-* Instead of hardcoding a specific distance that separates one rod from another, place another tag with a unique ID in between the rods to prevent having to change the value (should be easy to implement)
-* Experiment with a lower resolution AprilTag to allow for additional distance from the camera or to make the tags smaller (change only if necessary)
-* Integrate code so that a new camera and detector object doesn't have to be initialized on each call (very easy fix that will significantly reduce the time)
+* 
