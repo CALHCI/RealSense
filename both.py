@@ -4,6 +4,14 @@ import numpy as np
 import cv2
 
 
+"""
+Purpose: Trackes object in user inputed region of interest and distance to the center of the region is calcualted in 
+real time.
+Result: Objects are tracked successful and distance is correctly track from center of object to camera
+"""
+
+
+
 # Configure depth and color streams
 pipeline = rs.pipeline()
 config = rs.config()
