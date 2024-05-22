@@ -3,9 +3,10 @@ from itertools import zip_longest
 import numpy as np
 
 
-"""Purpose: Attempted to to detect the position of the object on the web feed and be able to precisely
-track where it moves 
-Result: Able to track position of one object but object of interest has to be manually inputed
+"""Purpose: Tracks multiple items using a region of interest algorithm. Users are prompted to draw
+shape around object they want to detect and algorithm draws a bounding box around said object.
+Result: Tracks multiple objects but must be manually selected by user. Number of items tracked can 
+be change in for loop in line 18.
 """
 
 bboxes = []
