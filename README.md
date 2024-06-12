@@ -12,7 +12,7 @@ A framework to gather data from Intel RealSense devices
 > Give a title to each of the followinng
 
 - [Installation Guidelines](#Installation-Guidelines)
-- [both](#both.py)
+- [both](#both_py)
 - [cam](#cam.py)
 - [camVision](#camVision.py)
 - [depth](#depth.py)
@@ -33,12 +33,12 @@ objects.py:
 -pip install numpy
 ```
 
-## both.py
+## both_py
 * Purpose: Trackes object in user inputed region of interest and distance to the center of the region is calcualted in 
 real time.
 * Result: Objects are tracked successful and distance is correctly track from center of object to camera
 
-## cam.py
+## cam_py
 
 > [!IMPORTANT]
 > complete this
