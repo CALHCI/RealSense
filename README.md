@@ -21,7 +21,7 @@ A framework to gather data from Intel RealSense devices
 ## Installation Guidelines 
 
 Type in terminal:
-'''
+```
 camVision.py, depth.py, :
 -pip install numpy
 -pip install pyrealsense2
@@ -30,7 +30,7 @@ camVision.py, depth.py, :
 objects.py:
 -pip install opencv-python
 -pip install numpy
-'''
+```
 
 ## both.py
 * Purpose: Trackes object in user inputed region of interest and distance to the center of the region is calcualted in 
