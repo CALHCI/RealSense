@@ -43,19 +43,19 @@ real time.
 > [!IMPORTANT]
 > complete this
 
-## camVision.py
+## camVision_py
 
 > [!IMPORTANT]
 > complete this
 
-## depth.py
+## depth_py
 
 * Purpose: Attempted to in realtime track the distance of the camera to 3 random points on the webfeed.
 * Result: Successfully used camera depth sensing to accurately track the distance from the camera
 to 3 points that are randomly generated. Precursor to both.py where the distance to the center
 of the object is accurately tracked in realtime.
 
-## objects.py
+## objects_py
 
 " Purpose: Tracks multiple items using a region of interest algorithm. Users are prompted to draw
 shape around object they want to detect and algorithm draws a bounding box around said object.
