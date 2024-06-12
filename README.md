@@ -1,6 +1,13 @@
+![GitHub repo size](https://img.shields.io/github/repo-size/CALHCI/RealSense)
+[![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/)
+
 # RealSense
 A framework to gather data from Intel RealSense devices
+> [!NOTE]
+> Useful information that users should know, even when skimming content.
 
+# Content
+- [AprilTag Detection](README.md/#AprilTag-Detection)
 
 ## Installation Guidelines (type in terminal):
 
@@ -47,7 +54,7 @@ be change in for loop in line 18.
 
 
 
-## AprilTag Detection Algorithm Documentation
+## AprilTag Detection
 ### Overview
 Provides the functionality to take a picture of a Tower of Hanoi instance where each ring is surrounded by AprilTags and represent their order and rod location in the form of an array "state/frame."
 
