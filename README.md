@@ -11,12 +11,12 @@ A framework to gather data from Intel RealSense devices
 > [!IMPORTANT]
 > Give a title to each of the followinng
 
-- [both.py](#Installation-Guidelines)
-- [both.py](#both.py)
-- [cam.py](#cam.py)
-- [camVision.py](#camVision.py)
-- [depth.py](#depth.py)
-- [dobjects.py](#objects.py)
+- [Installation Guidelines](#Installation-Guidelines)
+- [both](#both.py)
+- [cam](#cam.py)
+- [camVision](#camVision.py)
+- [depth](#depth.py)
+- [dobjects](#objects.py)
 - [AprilTag Detection](#AprilTag-Detection)
 
 ## Installation Guidelines 
