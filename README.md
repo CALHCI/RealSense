@@ -12,3 +12,5 @@ camVision.py, depth.py, :
 objects.py:
 -pip install opencv-python
 -pip install numpy
+
+# Content
