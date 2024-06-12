@@ -7,7 +7,7 @@ A framework to gather data from Intel RealSense devices
 > Useful information that users should know, even when skimming content.
 
 # Content
-- [AprilTag Detection]
+- [AprilTag Detection](#AprilTag Detection)
 
 ## Installation Guidelines (type in terminal):
 
