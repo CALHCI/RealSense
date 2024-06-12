@@ -16,6 +16,7 @@ A framework to gather data from Intel RealSense devices
 - [cam.py](#cam.py)
 - [camVision.py](#camVision.py)
 - [depth.py](#depth.py)
+- [dobjects.py](#objects.py)
 - [AprilTag Detection](#AprilTag-Detection)
 
 ## Installation Guidelines 
@@ -54,7 +55,7 @@ real time.
 to 3 points that are randomly generated. Precursor to both.py where the distance to the center
 of the object is accurately tracked in realtime.
 
-## depth.py
+## objects.py
 
 " Purpose: Tracks multiple items using a region of interest algorithm. Users are prompted to draw
 shape around object they want to detect and algorithm draws a bounding box around said object.
