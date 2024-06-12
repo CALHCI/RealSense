@@ -57,7 +57,7 @@ of the object is accurately tracked in realtime.
 
 ## objects_py
 
-" Purpose: Tracks multiple items using a region of interest algorithm. Users are prompted to draw
+* Purpose: Tracks multiple items using a region of interest algorithm. Users are prompted to draw
 shape around object they want to detect and algorithm draws a bounding box around said object.
 * Result: Tracks multiple objects but must be manually selected by user. Number of items tracked can 
 be change in for loop in line 18.
@@ -73,7 +73,8 @@ Provides the functionality to take a picture of a Tower of Hanoi instance where 
 4. Run `python apriltag_detect.py <n> --debug --delay 1000` to test it in debug mode with a delay of 1000 ms and `n` rings.
 5. Run `python apriltag_detect.py <n>` to continually print a Tower of Hanoi frame for `n` rings.
 
-(TODO) ADD A VISUAL OF THE TOWER
+> [!IMPORTANT]
+> (TODO) ADD A VISUAL OF THE TOWER
 
 ### Design Choices
 #### *How do we detect the rings?*
