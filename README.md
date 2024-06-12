@@ -3,10 +3,16 @@
 
 # RealSense
 A framework to gather data from Intel RealSense devices
-> [!NOTE]
+> [!ALERT]
 > Useful information that users should know, even when skimming content.
 
+> [!ALERT]
+> Give a title to each
+
 # Content
+> [!ALERT]
+> Give a title to each
+
 - [AprilTag Detection](README.md/#AprilTag-Detection)
 
 ## Installation Guidelines (type in terminal):
