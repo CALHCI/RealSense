@@ -3,20 +3,26 @@
 
 # RealSense
 A framework to gather data from Intel RealSense devices
-> [!ALERT]
+>[!IMPORTANT] 
 > Useful information that users should know, even when skimming content.
 
-> [!ALERT]
-> Give a title to each
 
 # Content
-> [!ALERT]
-> Give a title to each
+> [!IMPORTANT]
+> Give a title to each of the followinng
 
+- [both.py](#Installation-Guidelines)
+- [both.py](#both.py)
+- [AprilTag Detection](README.md/#AprilTag-Detection)
+- [AprilTag Detection](README.md/#AprilTag-Detection)
+- [AprilTag Detection](README.md/#AprilTag-Detection)
+- [AprilTag Detection](README.md/#AprilTag-Detection)
 - [AprilTag Detection](README.md/#AprilTag-Detection)
 
-## Installation Guidelines (type in terminal):
+## Installation Guidelines 
 
+Type in terminal:
+'''
 camVision.py, depth.py, :
 -pip install numpy
 -pip install pyrealsense2
@@ -25,8 +31,7 @@ camVision.py, depth.py, :
 objects.py:
 -pip install opencv-python
 -pip install numpy
-
-## Content
+'''
 
 ### both.py
 * Purpose: Trackes object in user inputed region of interest and distance to the center of the region is calcualted in 
