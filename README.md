@@ -13,4 +13,9 @@ objects.py:
 -pip install opencv-python
 -pip install numpy
 
-# Content
+## Content
+
+### both.py
+* Purpose: Trackes object in user inputed region of interest and distance to the center of the region is calcualted in 
+real time.
+* Result: Objects are tracked successful and distance is correctly track from center of object to camera
