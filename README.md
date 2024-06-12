@@ -3,7 +3,11 @@
 
 # RealSense
 A framework to gather data from Intel RealSense devices
+> [!NOTE]
+> Useful information that users should know, even when skimming content.
 
+# Content
+- [AprilTag Detection]
 
 ## Installation Guidelines (type in terminal):
 
@@ -50,7 +54,7 @@ be change in for loop in line 18.
 
 
 
-## AprilTag Detection Algorithm Documentation
+## AprilTag Detection
 ### Overview
 Provides the functionality to take a picture of a Tower of Hanoi instance where each ring is surrounded by AprilTags and represent their order and rod location in the form of an array "state/frame."
 
