@@ -16,7 +16,7 @@ A framework to gather data from Intel RealSense devices
 - [cam](#cam_py)
 - [camVision](#camVision_py)
 - [depth](#depth_py)
-- [dobjects](#objects_py)
+- [objects](#objects_py)
 - [AprilTag Detection](#AprilTag-Detection)
 
 ## Installation Guidelines 
