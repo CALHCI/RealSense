@@ -13,9 +13,9 @@ A framework to gather data from Intel RealSense devices
 
 - [both.py](#Installation-Guidelines)
 - [both.py](#both.py)
-- [AprilTag Detection](README.md/#AprilTag-Detection)
-- [AprilTag Detection](README.md/#AprilTag-Detection)
-- [AprilTag Detection](README.md/#AprilTag-Detection)
+- [cam.py](#cam.py)
+- [camVision.py](#camVision.py)
+- [depth.py](#depth.py)
 - [AprilTag Detection](README.md/#AprilTag-Detection)
 - [AprilTag Detection](README.md/#AprilTag-Detection)
 
@@ -33,37 +33,34 @@ objects.py:
 -pip install numpy
 '''
 
-### both.py
+## both.py
 * Purpose: Trackes object in user inputed region of interest and distance to the center of the region is calcualted in 
 real time.
 * Result: Objects are tracked successful and distance is correctly track from center of object to camera
 
-### cam.py
+## cam.py
 
 * ?
 * ?
 
-### camVision.py
+## camVision.py
 
 * ?
 * ?
 
-### depth.py
+## depth.py
 
 * Purpose: Attempted to in realtime track the distance of the camera to 3 random points on the webfeed.
 * Result: Successfully used camera depth sensing to accurately track the distance from the camera
 to 3 points that are randomly generated. Precursor to both.py where the distance to the center
 of the object is accurately tracked in realtime.
 
-### depth.py
+## depth.py
 
 " Purpose: Tracks multiple items using a region of interest algorithm. Users are prompted to draw
 shape around object they want to detect and algorithm draws a bounding box around said object.
 * Result: Tracks multiple objects but must be manually selected by user. Number of items tracked can 
 be change in for loop in line 18.
-
-
-
 
 ## AprilTag Detection
 ### Overview
@@ -112,7 +109,5 @@ I chose to use AprilTags as, at the cost of minimal computing power and processi
 4. Separate them into three arrays representing the 3 rods and place the id based on it's x value in relation to the x values of the two dividers.
 5. Sort those arrays based on the y value of their average position
 
-### How to Improve
-* 
 
 
